@@ -1,6 +1,9 @@
 package com.rudy.android_java_datepickerrang;
 
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -28,6 +31,14 @@ public class MainActivity extends AppCompatActivity {
 
         btn = findViewById(R.id.btn_show_picker);
         tvSelectDate = findViewById(R.id.tv_select_date);
+
+//        Locale myLocale = new Locale("th");  // for bengali set 'bn'
+//        Resources res = getResources();
+//        DisplayMetrics dm = res.getDisplayMetrics();
+//        Configuration conf = res.getConfiguration();
+//        conf.locale = myLocale;
+//        res.updateConfiguration(conf, dm);
+//        onConfigurationChanged(conf);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
